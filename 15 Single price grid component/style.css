@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: hsl(204, 43%, 93%);
+    font-size: 16px;
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0px 10px;
+}
+.container {
+    border-radius: 5px;
+    margin: 120px auto;
+    max-width: 500px;
+}
+.container .white-bg {
+    padding: 2rem 2.3rem;
+    background-color: #fff;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.white-bg h3 {
+    color: hsl(179, 69%, 45%);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.white-bg .sub-heading {
+    padding: 8px 0px;
+}
+.sub-heading .bright-yellow {
+    color: hsl(62, 84%, 48%);
+    margin-bottom: 10px;
+    font-size: 14.5px;
+    font-weight: 550;
+}
+.sub-heading .des-text {
+    font-size: 13px;
+    line-height: 20px;
+    color: hsl(218, 22%, 67%);
+}
+.container .two-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.two-column .plan-price {
+    background-color: hsl(179, 62%, 43%);
+    padding: 2rem 2rem 1.5rem 2rem;
+    border-bottom-left-radius: 5px;
+}
+.plan-price h4 {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.plan-price .price {
+    color: #fff;
+    font-weight: 540;
+    font-size: 27px;
+    margin-bottom: 5px;
+}
+.price span {
+    font-weight: normal;
+    font-size: 13px;
+    margin-left: 4px;
+    color: hsl(0, 0%, 100%, 0.5);
+    letter-spacing: 1px;
+}
+.plan-price p {
+    color: hsla(210, 100%, 100%, 0.8);
+    letter-spacing: 1px;
+    font-size: 11.1px;
+    margin-bottom: 30px;
+}
+.plan-price button {
+    border: none;
+    border-radius: 3px;
+    background-color: hsl(71, 73%, 54%);
+    box-shadow: 0px 3px 12px hsl(0, 0%, 0%, 0.2);
+    color: hsla(0, 0%, 96%, 1);
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 13px;
+}
+.two-column .details-text {
+    background-color: hsl(179, 62%, 43%, 0.8);
+    padding: 2rem 2.3rem;
+    border-bottom-right-radius: 5px;
+}
+.details-text h4 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+.details-text p {
+    font-size: 12px;
+    line-height: 19px;
+    color: hsla(210, 100%, 100%, 0.6);
+}
+footer p {
+    text-align: center;
+    font-size: 13px;
+    color: #000000;
+}
+footer p a {
+    text-decoration: underline;
+    color: hsl(179, 62%, 43%, 0.8);;
+    padding: 20px 0px;
+}
+@media (max-width: 496px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+    }
+    .container .two-column {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .two-column .plan-price {
+        border-bottom-left-radius: 0px;
+    }
+    .two-column .details-text {
+        border-bottom-left-radius: 5px;
+    }
+    .plan-price button {
+        width: 100%;
+    }
+}

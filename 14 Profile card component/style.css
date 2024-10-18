@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;;
+}
+body {
+    font-size: 18px;
+    background-color: hsl(185, 75%, 39%) !important;
+    background: url(assets/bg-pattern-bottom.svg);
+    background-repeat: repeat-y 100px;
+    font-family: "Kumbh Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "YOPQ" 300;
+    margin: 0px 10px;
+}
+.container {
+    background: #fff;
+    max-width: 300px;
+    border-radius: 10px;
+    margin: 150px auto;
+}
+.container .bg {
+    background: url(assets/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    position: relative;
+}
+.card-infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div .profile-img {
+    width: 60px;
+    border-radius: 60%;
+    border: 3px solid #fff;
+    position: relative;
+    top: -35px;
+}
+.card-infos .name {
+    margin-top: -20px;
+    margin-bottom: 7px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.name span {
+    color: hsl(0, 0%, 59%);
+    font-weight: normal;
+    margin-left: 5px;
+}
+.location {
+    font-size: 11px;
+    padding-bottom: 20px;
+    color: hsl(0, 0%, 59%);
+    font-weight: 500;
+}
+.numbers {
+    display: flex;
+    padding: 1.5rem 1rem;
+    justify-content: space-around;
+    align-items: center;
+}
+.numbers .font-size-medium-x h3 {
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+.font-size-medium-x p {
+    font-size: 10px;
+    color: hsl(0, 0%, 59%);
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: capitalize;
+}
+footer p {
+    text-align: center;
+    color: #f2efef;
+    font-size: 13px;
+}
+footer p a {
+    text-decoration: underline;
+    color: #66bbdc;
+    padding: 20px 0px;
+}

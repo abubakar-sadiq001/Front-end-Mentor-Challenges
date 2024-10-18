@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* font-size: 18px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding: 50px 0px;
+}
+.container {
+    display: flex; 
+    background-color: #fff;
+    box-shadow: 0px 5px 20px #bbbbbd;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+@media (max-width: 522px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        overflow: auto;
+    }
+    .container .result-side {
+        max-width: 223px !important;
+        width: 100%;
+        padding-bottom: 30px !important;
+    }
+}
+/* RESULT SIDE */
+.container .result-side {
+    background: linear-gradient(hsla(256, 72%, 46%, 0.9), hsla(241, 72%, 46%, 0.9), hsl(241, 81%, 54%)
+    );
+    max-width: 200px;
+    padding: 1.3rem;
+    border-radius: 20px;
+}
+.result-side .center {
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    opacity: .7;
+}
+.result-side .score-display {
+    background-color: hsla(241, 72%, 46%, 0.4);
+    border-radius: 50%;
+    padding: 1.4rem .7rem;
+    text-align: center;display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    margin: 20px auto;
+}
+.score-display h1 {
+    font-size: 44px;
+    color: #fff;
+}
+.score-display p {
+    font-size: 13px;
+    color: #fdfdfd;
+    opacity: 0.4;
+}
+.result-side .great-h {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+.result-side .score-info {
+    text-align: center;
+    color: #fff;
+    opacity: 0.6;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* SUMMARY SIDE */
+.container .summary-side {
+    background: #fff;
+    /* box-shadow: 0px 0px 7px #8f8d9d; */
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 1.6rem;
+}
+.summary-side .header-left-align {
+    margin-bottom: 20px;
+}
+.summary-side .reaction-test {
+    background-color: hsl(317, 87%, 52%, 0.13);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 8px 6px;
+    width: 200px;
+}
+.reaction-test img {
+    width: 17px;
+}
+.reaction-test h4 {
+    font-size: 15px;
+    color: hsl(0, 100%, 67%);
+    margin-left: 3px;
+}
+.reaction-test .score {
+    margin-left: 60px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+}
+.score .over {
+    color: #333;
+    font-weight: normal;
+}
+/* memory test */
+.summary-side .memory-test {
+    background-color: hsl(317, 87%, 52%, 0.13);
+    border-radius: 5px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    padding: 8px 6px;
+    width: 200px;
+}
+.memory-test img {
+    width: 16px;
+}
+.memory-test h4 {
+    font-size: 15px;
+    color: hsl(39, 100%, 56%);
+    margin-left: 5px;
+}
+.memory-test .score {
+    margin-left: 60px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+}
+/* verbal test */
+.summary-side .verbal-test {
+    background-color: hsla(130, 55%, 58%, 0.13);
+    border-radius: 5px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    padding: 8px 6px;
+    width: 200px;
+}
+.verbal-test img {
+    width: 15px;
+}
+.verbal-test h4 {
+    font-size: 15px;
+    color: hsl(166, 100%, 37%);
+    margin-left: 5px;
+}
+.verbal-test .score {
+    margin-left: 73px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+}
+/* visual */
+.summary-side .visual-test {
+    background-color: hsla(315, 4%, 20%, 0.13);
+    border-radius: 5px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    padding: 8px 6px;
+    width: 200px;
+}
+.visual-test img {
+    width: 16px;
+}
+.visual-test h4 {
+    font-size: 15px;
+    color: rgb(58, 95, 242);
+    margin-left: 5px;
+}
+.visual-test .score {
+    margin-left: 75px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+}
+.summary-side .action-btn {
+    border: none;
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+    width: 211px;
+    display: block;
+    align-items: center;
+    padding: .8rem;
+    margin: 25px 0px 10px 0px;
+}

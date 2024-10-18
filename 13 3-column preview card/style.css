@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 15px;
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+.container {
+    /*  */
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    margin: 0px 10px;
+}
+.container .box {
+    padding: 2rem 1.7rem;
+    max-width: 170px;
+
+}
+.box img {
+    width: 45px;
+    margin-bottom: 20px;
+}.box h1 {
+    font-size: 23px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.box p {
+    margin-bottom: 50px;
+    font-size: 11px;
+    line-height: 18px;
+    font-weight: 500;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.box button {
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 105px;
+    height: 35px;
+    background-color: #fff;
+    font-size: 12px;
+    &:active {
+        background-color: transparent;
+        border: 2px solid #fff;
+        color: #fff;
+    }
+}
+.container .box1 {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.box1 button {
+    color: hsl(31, 77%, 52%);
+}
+.container .box2 {
+    background-color: hsl(184, 100%, 22%);
+}
+.box2 button {
+    color: hsl(184, 100%, 22%);;
+}
+.container .box3 {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.box3 button {
+    color: hsl(179, 100%, 13%);
+}
+footer p {
+    text-align: center;
+    color: #000000;
+}
+footer p a {
+    text-decoration: underline;
+    color: #e88513;
+    padding: 20px 0px;
+}
+
+@media (max-width: 496px) {
+    .container {
+        flex-direction: column;
+        margin: 100px 10px;
+    }
+    .container .box1 {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0px;
+    }
+    .container .box3 {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 5px;
+    }
+}

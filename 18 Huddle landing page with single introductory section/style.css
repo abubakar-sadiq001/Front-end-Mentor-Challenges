@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    background: url(assets/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: hsl(257, 40%, 49%);
+}
+section {
+   font: inherit;
+}
+section header {
+    /* padding: 3.5rem 5rem; */
+}
+header .logo {
+    padding: 2rem 2.3rem;
+    width: 200px;
+}
+section .flex-row {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    padding: 1rem;
+}
+.flex-row .illustration-img img {
+    max-width: 700px;
+    width: 100%;
+}
+.flex-row .contents {
+    /* background-color: red; */
+    color: #fff;
+    max-width: 500px;
+    padding: 1rem 2rem;
+}
+.contents h1 {
+    font-size: 210%;
+    margin: 20px 0px;
+}
+.contents p {
+    font-size: 20px;
+    line-height: 25px;
+}
+.contents button {
+    border: none;
+    background-color: #fff;
+    color: hsl(257, 40%, 49%);
+    width: 180px;
+    height: 50px;
+    border-radius: 30px;
+    margin: 15px 0px;
+    cursor: pointer;
+    font-size: 105%;
+    &:active {
+        color: #fff;
+        background-color: hsl(300, 69%, 71%);
+    }
+}
+section .social-links {
+    display: flex;
+    justify-content: end;
+    padding: 0px 50px;
+    gap: 15px;
+    padding-bottom: 30px;
+}
+section .social-links li {
+    list-style: none;
+
+}
+section .social-links li a {
+    text-decoration: none;
+    font-size: 15px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 6px 6px;
+    border-radius: 50%;
+    &:active {
+        color: hsl(300, 69%, 71%);
+        border-color: hsl(300, 69%, 71%);
+    }
+}
+footer p {
+    text-align: center;
+    color: hsl(322, 100%, 73%);
+    font-size: 12px;
+    font-weight: 550;
+}
+footer p a {
+    text-decoration: underline;
+    color: hsl(264, 100%, 99%);
+    padding: 20px 0px;
+}
+@media (max-width: 978px) {
+    section .flex-row {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+    }
+    section {
+        background: url(assets/bg-mobile.svg);
+        background-color: hsl(257, 40%, 49%);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center top;
+        height: 1100px;
+    }
+    .flex-row .contents {
+        margin-top: 20px;
+        padding: 1rem 0.6rem;
+        max-width: 100%;
+    }
+    .contents h1 {
+        line-height: 50px;
+    }
+    .contents p {
+        margin-bottom: 20px;
+    }
+    .contents button {
+        width: 250px;
+    }
+    section .flex-row {
+        margin-top: 60px;
+    }
+    section .social-links {
+        justify-content: center;
+    }
+}

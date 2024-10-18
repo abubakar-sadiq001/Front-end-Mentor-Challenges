@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 15px;
+    background-color: hsl(233, 47%, 7%);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;}
+main {
+    margin: 0px 30px;
+}
+.container {
+    background-color: hsl(244, 38%, 16%);
+    max-width: 800px;
+    margin: 200px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 5px;
+}
+
+.container .left-content {
+    padding: 2rem 3rem 2rem 2.5rem;
+}
+.left-content h1 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.left-content .sub-heading {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 50px;
+    font-size: 12px;
+    line-height: 20px;
+}
+.left-content .numbers {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.numbers .white {
+    color: #fff;
+}
+.white h3 {
+    padding-bottom: 3px;
+}
+.white p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 10px;
+}
+.left-content h1 span {
+    color: hsl(277, 64%, 61%);
+}
+.container .right-bg-img {
+    background: url(assets/image-header-desktop.jpg);
+    /* height: 300px; */
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: relative;
+}
+.right-bg-img .backdrop-bg {
+    background-color: hsla(277, 73%, 48%, 0.5);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+footer p {
+    text-align: center;
+    color: #fff;
+}
+footer p a {
+    text-decoration: underline;
+    color: #fff;
+    padding: 20px 0px;
+}
+@media (max-width: 662px) {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .container .right-bg-img {
+        background: url(assets/image-header-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-top-left-radius: 5px;
+        height: 200px;
+    }
+    .left-content {
+        text-align: center;
+    }
+    .left-content .numbers {
+        flex-direction: column;
+        gap: 40px;
+    }
+}

@@ -1,0 +1,194 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --pretty-fire: hsl(6, 100%, 80%);
+    --pretty-pink: hsl(335, 100%, 65%);
+    --pale-blue: hsl(243, 100%, 93%);
+    --grayish-blue: hsl(229, 7%, 55%);
+    --dark-blue: hsl(228, 56%, 26%);
+    --very-dark-blue: hsl(229, 57%, 11%);
+}
+
+body {
+    /* background-color: var(--very-dark-blue);
+    background-image: url(images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0% 100%;
+    background-size: 100% 50%;
+    overflow: hidden; */
+    background-color: hsl(229, 57%, 11%) !important;
+    background: url(assets/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: 0% 100%;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    margin: 24px;
+    background: var(--dark-blue);
+}
+
+.app-functions {
+    width: 25%;
+    max-width: 240px;
+    padding: 40px;
+    padding-right: 90px;
+    padding-top: 60px;
+    border-radius: 18px 6em 18px 18px;
+}
+
+.logo {
+    width: 70%;
+    max-width: 240px;
+}
+
+.functions {
+    margin-top: 22px;
+    display: flex;
+    align-content: left;
+    justify-content: start;
+}
+
+.functions a{
+    margin-right: 20px;
+    background-color: var(--very-dark-blue);
+    padding: 16px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.35s;
+}
+
+.functions a:hover {
+    filter: hue-rotate(-5deg) brightness(1.5);
+}
+
+.client-data {
+    padding: 40px;
+    padding-bottom: 60px;
+    border-radius: 18px;
+    width: 25%;
+    font-family: 'Raleway';
+    color: var(--pale-blue);
+    position: relative;
+}
+
+.visual {
+    margin: auto;
+    width: 95%;
+    height: 20px;
+    padding: 2px;
+    border-radius: 12px;
+    background-color: var(--very-dark-blue);
+    position: relative;
+}
+
+.bar {
+    background: linear-gradient(to right, var(--pretty-fire), var(--pretty-pink));
+    width: 90%;
+    height: 100%;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    background-color: var(--pale-blue);
+    border-radius: 50%;
+    margin: auto 2px;
+}
+
+.visual::before {
+    content: "0 GB";
+    position: absolute;
+    left: -20px;
+    bottom: -25px;
+}
+
+.visual::after {
+    content: "1000 GB";
+    position: absolute;
+    right: -20px;
+    bottom: -25px;
+}
+
+.message-bubble {
+    padding: 2px 18px;
+    border-radius: 16px;
+    border-bottom-right-radius: 0;
+    background-color: white;
+    color: var(--very-dark-blue);
+    font-weight: 700;
+    position: absolute;
+    top: -35%;
+    right: 8%;
+}
+
+.triangle-shape {
+    position: absolute;
+    bottom: -50;
+    right: 0;
+    border-left: 25px solid transparent;
+    border-top: 25px solid white;
+}
+
+.amount {
+    font-size: 3rem;
+}
+
+.description {
+    color: var(--grayish-blue);
+}
+
+@media (max-width: 800px) {
+    body {
+        background-image: url(assets/bg-mobile.png);
+        background-position: 0% 100%;
+        background-size: 100% 100%;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .app-functions, .client-data {
+        width: 65%;
+        max-width: none;
+        padding: 60px;
+    }
+
+    .message-bubble {
+        border-radius: 16px;
+        top: 75%;
+        right: 35%;
+    }
+
+    .triangle-shape {
+        opacity: 0;
+    }
+}
+
+.attribution {
+    /* position: absolute;
+    bottom: 10px; */
+    text-align: center;
+    color: var(--pretty-fire);
+}
+
+.attribution a{
+    text-decoration: none;
+    color: var(--pale-blue);
+}

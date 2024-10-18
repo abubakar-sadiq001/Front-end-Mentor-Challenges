@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 18px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    background-color: hsl(217, 54%, 11%);
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container {
+    background-color: hsl(216, 50%, 16%);
+    padding: 1rem;
+    max-width: 300px;
+    border-radius: 10px;
+    margin: 0px 10px;
+}
+.container section {
+    background: url(assets/image-equilibrium.jpg);
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container section:is(:active, :hover) .front-drop, img {
+    display: flex;
+}
+section .front-drop {
+    background-color: hsl(178, 100%, 50%, 0.4);
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    display: none;
+}
+.front-drop img {
+    /* width: 100px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.medium-header {
+    font-size: 20px;
+    padding: 15px 0px;
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.sub-heading {
+    color: hsl(215, 51%, 70%);
+    /* margin-bottom: 20px; */
+}
+.container .coin-type {
+    display: flex;
+    padding: 15px 0px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid hsl(215, 51%, 70%, 0.4);
+    padding-bottom: 20px;
+}
+.coin-type .eth-price {
+    color: hsl(178, 100%, 50%);
+    display: inline-flex;
+    align-items: center;
+}
+.eth-price img {
+    margin-right: 5px;
+}
+.count-down {
+    display: inline-flex;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+}
+.count-down img {
+    margin-right: 5px;
+}
+.container .creator {
+    display: inline-flex;
+    align-items: center;
+    padding: 15px 0px;
+}
+.creator div img {
+    width: 30px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+.creator p {
+    margin-left: 15px;
+    color: hsl(215, 51%, 70%);
+    font-size: 15px;
+}
+.creator p span {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+footer  {
+    text-align: center;
+    color: hsl(178, 100%, 50%);
+    font-size: 12px;
+    font-weight: 550;
+}
+footer p a {
+    text-decoration: underline;
+    color: #ffffff;
+    padding: 20px 0px;
+}

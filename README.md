@@ -1,5 +1,8 @@
 # Front-end-Mentor-Challenges
 
+## 🛠 Skills
+Javascript, HTML, CSS...
+
 ## Demo
 
 01) QR Code Component => (https://abubakar-sadiq001.github.io/Front-end-Mentor-Challenges/01%20QR%20Code/QR%20Code.html)
@@ -43,3 +46,5 @@
 20) Fylo Data Storage Component => (https://abubakar-sadiq001.github.io/Front-end-Mentor-Challenges/19%20Social%20proof%20section/index.html)
 
 21) NFT Preview Card Component => (https://abubakar-sadiq001.github.io/Front-end-Mentor-Challenges/21%20NFT%20preview%20card%20component/index.html)
+
+22) NFT Preview Card Component => (https://abubakar-sadiq001.github.io/Front-end-Mentor-Challenges/Intro-section-with-dropdown-navigation)

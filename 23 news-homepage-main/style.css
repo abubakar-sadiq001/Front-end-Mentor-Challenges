@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    padding: 30px 30px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.overlay {
+    background-color: #37393a;
+    opacity: .4;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+}
+main {
+    max-width: fit-content;
+    margin: 0px auto;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+nav .myLogo {
+    font: normal;
+}
+nav .myLists {
+    display: flex;
+    align-items: center;
+}
+nav .myLists li {
+    list-style-type: none;
+    margin-left: 20px;
+}
+nav .myLists li a {
+    text-decoration: none;
+    color: hsl(236, 13%, 42%);
+    font-size: 16px;
+    &:hover {
+        color: hsl(5, 85%, 63%);
+    }
+}
+.open_menu {
+    display: none;
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+}
+/* Side bar */
+.side-bar {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    z-index: 999;
+    display: none;
+}
+.side-bar .close_menu {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    cursor: pointer;
+}
+.side-bar ul {
+    align-items: center;
+    margin: 200px 30px;
+}
+.side-bar ul li {
+    list-style-type: none;
+    line-height: 2.5;
+}
+.side-bar ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: hsl(240, 100%, 5%)
+}
+/*  */
+.main-sec {
+    font: inherit;
+}
+.main-sec .flex {
+    display: flex;
+    gap: 15px;
+}
+.main-sec .left_row .wide-img {
+    background: url(assets/image-web-3-desktop.jpg);
+    background-size: cover;
+    height: 60%;
+    width: 100%;
+}
+.left_row .flex-content {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    gap: 30px;
+}
+.flex-content .m-h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.1;
+    width: 250px;
+}
+.p-x-btn .sub-heading {
+    width: 340px;
+    color: hsl(236, 13%, 42%);
+    line-height: 1.7;
+}
+.p-x-btn #readmore {
+    background-color: hsl(5, 85%, 63%);
+    width: 170px;
+    height: 45px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    word-spacing: 8px;
+    letter-spacing: 2.2px;
+    margin: 20px auto;
+}
+/*  */
+main .right_row {
+    background-color: rgb(0, 0, 0);
+    padding: 20px 10px 10px 15px;
+    max-width: 300px;
+}
+.right_row .hdlne-h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: hsl(35, 77%, 62%);
+}
+.right_row .hdlne {
+    padding: 20px 0px;
+    color: #fff;
+}
+.hdlne h3 {
+    font-size: 16px;
+}
+.right_row .hdlne p {
+    margin: 10px 0px;
+    color: hsl(236, 13%, 42%);
+    line-height: 1.5;
+}
+.right_row .first_hdlne {
+    border-bottom: 1px solid hsl(236, 13%, 42%);
+}
+.right_row .second_hdlne {
+    border-bottom: 1px solid hsl(236, 13%, 42%);
+}
+.avai-devices {
+    display: flex;
+    margin: 50px 0px;
+    gap: 30px;
+}
+.avai-devices .all {
+    display: flex;
+    align-items: center;
+}
+.all img {
+    width: 100px;
+    height: auto;
+}
+.all .descriptions {
+    margin-left: 20px;
+}
+.descriptions .orange-cl {
+    color: hsl(5, 85%, 63%);
+    font-size: 25px;
+}
+.descriptions h4 {
+    margin: 10px 0px;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    &:hover {
+        color: hsl(5, 85%, 63%);
+        cursor: pointer;
+    }
+}
+.descriptions #sub-h {
+    color: hsl(236, 13%, 42%);
+    font-size: 15px;
+    line-height: 1.6;
+    width: 150px;
+}
+
+@media (max-width: 997px) {
+    .main-sec .flex {
+        flex-direction: column;
+    }
+    .main-sec .left_row .wide-img {
+        background: url(assets/image-web-3-mobile.jpg)no-repeat;
+        background-size: cover;
+        height: 300px;
+}
+}
+@media (max-width: 953px) {
+    .avai-devices {
+        flex-flow: wrap;
+    }
+}
+@media (max-width: 738px) {
+    nav .myLists {
+        display: none;
+    }
+    html, body {
+        padding: 30px 10px;
+    }
+    .open_menu {
+        display: block;
+    }
+}
+@media (max-width: 665px) {
+    .left_row .flex-content {
+        flex-direction: column;
+        
+    }
+    .flex-content .m-h1 {
+        width: 100%;
+    }
+    .p-x-btn .sub-heading {
+        width: 100%;
+    }
+    main .right_row {
+        margin: 0px auto;
+    }
+}

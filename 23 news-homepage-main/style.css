@@ -127,6 +127,10 @@ nav .myLists li a {
     letter-spacing: 2.2px;
     margin: 20px auto;
 }
+.p-x-btn #readmore:hover {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}
 /*  */
 main .right_row {
     background-color: rgb(0, 0, 0);
@@ -141,6 +145,10 @@ main .right_row {
 .right_row .hdlne {
     padding: 20px 0px;
     color: #fff;
+    &:hover {
+        cursor: pointer;
+        color: hsl(35, 77%, 62%);
+    }
 }
 .hdlne h3 {
     font-size: 16px;

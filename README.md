@@ -47,4 +47,4 @@ Javascript, HTML, CSS...
 
 21) NFT Preview Card Component => (https://abubakar-sadiq001.github.io/Front-end-Mentor-Challenges/21%20NFT%20preview%20card%20component/index.html)
 
-22) NFT Preview Card Component => (https://abubakar-sadiq001.github.io/Front-end-Mentor-Challenges/Intro-section-with-dropdown-navigation)
+22) Intro-section with drop down navigation => (https://abubakar-sadiq001.github.io/Front-end-Mentor-Challenges/Intro-section-with-dropdown-navigation)

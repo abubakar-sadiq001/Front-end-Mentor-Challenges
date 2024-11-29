@@ -51,4 +51,4 @@ Javascript, HTML, CSS...
 
 23) News home page => (https://abubakar-sadiq001.github.io/Front-end-Mentor-Challenges/23%20news-homepage-main/index.html)
 
-24) Intro-component-with-signup-form-master => (https:/abubakar-sadiq001.github.io/Front-end-Mentor-Challenges/Intro-component-with-signup-form-master/index.html/)
+24) Intro-component-with-signup-form-master => (https://abubakar-sadiq001.github.io/Front-end-Mentor-Challenges/Intro-component-with-signup-form-master/index.html/)

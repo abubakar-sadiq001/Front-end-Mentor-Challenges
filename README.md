@@ -50,3 +50,5 @@ Javascript, HTML, CSS...
 22) Intro-section with drop down navigation => (https://abubakar-sadiq001.github.io/Front-end-Mentor-Challenges/22%20Intro-section-with-dropdown-navigation/index.html)
 
 23) News home page => (https://abubakar-sadiq001.github.io/Front-end-Mentor-Challenges/23%20news-homepage-main/index.html)
+
+24) Intro-component-with-signup-form-master => (https:/abubakar-sadiq001.github.io/Front-end-Mentor-Challenges/Intro-component-with-signup-form-master/index.html/)

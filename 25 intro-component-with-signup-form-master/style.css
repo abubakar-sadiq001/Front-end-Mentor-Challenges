@@ -1,0 +1,175 @@
+@font-face {
+    font-family: "MyCustomFonts";
+    src: url("font/Epilogue-Medium.ttf");
+}
+@font-face {
+    font-family: "LightFont";
+    src: url("font/Epilogue-VariableFont_wght.ttf");
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: url(assets/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    font-family: "MyCustomFonts", sans-serif;
+    font-style: normal;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+main .container {
+    display: flex;
+    align-items: center;
+    padding: 0px 10%;
+    gap: 100px;
+}
+.desc-text .line-height--div {
+    color: #fff;
+}
+.line-height--div h1 {
+    margin: 2rem 0rem !important;
+    margin: 16px 0px;
+    max-width: 350px;
+    width: 100%;
+    font-size: 2.5rem;
+}
+.line-height--div p {
+    max-width: 500px;
+    line-height: 1.5;
+}
+.line-height--div #subH {
+    font-size: 15px;
+    line-height: 1.5;
+}
+/* form wrapper side */
+.form-wrapper #subH {
+    background-color: hsl(248, 32%, 49%);
+    box-shadow: 0px 6px 3px hsl(0, 1%, 17%, 0.3);
+    color: #fff;
+    border-radius: 8px;
+    margin: 15px 0px;
+    padding: 20px 0px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+.form-wrapper span {
+    font-size: 13px;
+    font-weight: normal;
+    font-family: "LightFont", sans-serif;
+
+}
+.form-wrapper .formInput-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 6px 3px hsl(0, 1%, 17%, 0.3);
+}
+.formInput-container form {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 25px 20px;
+}
+form input {
+    margin: 10px;
+    height: 45px;
+    padding: 0px 0px 0px 25px;
+    font-weight: bold;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid hsl(246, 25%, 77%);
+    &::placeholder {
+        color: hsl(240, 2%, 45%);
+    }
+    &:focus {
+        border: 1px solid;
+    }
+}
+.align-right {
+    text-align: right;
+    font-size: 10px;
+    margin-right: 10px;
+    color: red;
+    display: none;
+}
+.showErrMessage {
+    display: block;
+}
+form #btn {
+    background-color: hsl(154, 59%, 51%);
+    cursor: pointer;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    word-spacing: 3.5px;
+    margin: 7px 10px 0px 10px;
+    &:active {
+        opacity: .6;
+    }
+}
+form .termsText {
+    font-size: 10px;
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+    color: hsl(240, 2%, 45%);
+}
+form #redText {
+    color: red;
+    font-size: 10px;
+}
+form img {
+    width: 20px;
+    position: relative;
+    top: 43px;
+    left: 88%;
+    user-select: none;
+    display: none;
+}
+.borderErr {
+    outline: 2px solid red;
+    border: none;
+}
+
+@media (max-width: 917px) {
+    body {
+        background: url(assets/bg-intro-mobile.png);
+        background-color: hsl(0, 100%, 74%);
+    }
+    main .container {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 40px;
+        margin: 0px 15px;
+        padding: 15rem 0px 5rem 0px;
+    }
+    .desc-text .line-height--div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0px 10px;
+    }
+    .form-wrapper .formInput-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .line-height--div h1 {
+        font-size: 2rem;
+        line-height: 1.5;
+    }
+    .line-height--div p {
+        line-height: 1.7;
+        font-weight: lighter;
+        text-align: center;
+    }
+}

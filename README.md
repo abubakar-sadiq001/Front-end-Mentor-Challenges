@@ -3,6 +3,8 @@
 ## 🛠 Skills
 Javascript, HTML, CSS...
 
+### This repo contains only frontend mentor challenges
+
 ## Demo
 
 01) QR Code Component => (https://abubakar-sadiq001.github.io/Front-end-Mentor-Challenges/01%20QR%20Code/QR%20Code.html)
@@ -51,4 +53,4 @@ Javascript, HTML, CSS...
 
 23) News home page => (https://abubakar-sadiq001.github.io/Front-end-Mentor-Challenges/23%20news-homepage-main/index.html)
 
-24) Intro-component-with-signup-form-master => (https://abubakar-sadiq001.github.io/Front-end-Mentor-Challenges/Intro-component-with-signup-form-master/index.html/)
+24) Intro-component-with-signup-form-master => (https://abubakar-sadiq001.github.io/Front-end-Mentor-Challenges/25%20intro-component-with-signup-form-master/)

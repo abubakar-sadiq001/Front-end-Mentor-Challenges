@@ -1,0 +1,153 @@
+@font-face {
+    font-family: "myFont";
+    src: url("assets/fonts/Roboto-Regular.ttf");
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color:  hsl(235, 18%, 26%);
+    font-family: "myFont", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+main {
+    position: relative;
+}
+.container {
+    background-color: #fff;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 25px;
+    align-items: center;
+    height: 650px;
+    column-gap: 15px;
+}
+.container .left-col__1 {
+    padding: 0px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(234, 29%, 20%);
+}
+.left-col__1 h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.left-col__1 p {
+    margin: 25px 0px;
+    font-size: 18px;
+    max-width: 300px;
+    width: 100%;
+} 
+.left-col__1 ul {
+    margin-left: 33px;
+}
+.left-col__1 ul li {
+    list-style: none;
+    line-height: 2.3;
+    position: relative;
+    font-weight: 590;
+}
+.left-col__1 ul li::before {
+    content: url(assets/icon-list.svg);
+    position: absolute;
+    top: 5px;
+    left: -35px;
+}
+form {
+    margin: 20px 0px;
+}
+form label {
+    font-size: 11.5px;
+    font-weight: bold;
+}
+.errText {
+    color: red;
+    opacity: .60;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: right;
+    margin: 0px 10px -17px 0px;
+    display: none;
+}
+form #myEmail {
+    width: 100%;
+    max-width: 320px;
+    border: none;
+    border-radius: 6px;
+    height: 50px;
+    outline: 1px solid hsl(231, 7%, 60%);
+    padding-left: 17px;
+    margin-top: 8px;
+}
+form #myBtn {
+    padding: 5px 57px;
+    height: 55px;
+    border: none;
+    background-color: hsl(234, 29%, 20%);
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 18px;
+    font-size: 16px;
+    &:hover {
+        background: linear-gradient(to right, hsl(0, 100%, 70%), hsl(22, 100%, 60%));
+        box-shadow: 2px 5px 15px 6px hsl(22, 100%, 60%, 0.3),
+                    2px 5px 10px 7px hsl(22, 100%, 60%, 0.3);
+    }
+}
+
+/*  */
+.container .right-col__1 {
+    background: url(assets/illustration-sign-up-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-right-radius: 17px;
+    border-bottom-left-radius: 17px;
+    border-top-right-radius: 17px;
+    height: 100%;
+}
+
+@media (max-width: 712px) {
+     .container {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        height: 100%;
+     }
+     .container .right-col__1 {
+        background: url(assets/illustration-sign-up-mobile.svg);
+        background-repeat: no-repeat;
+        border-top-right-radius: 0px;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+     }
+     .left-col__1 h1 {
+        font-size: 2.3rem;
+        margin: 10px 0px;
+     }
+     .left-col__1 div h1,
+     p,
+     ul,
+     form {
+        padding: 8px 0px;
+     }
+
+}
+@media (max-width: 404px) {
+    form #myBtn {
+        padding: 5px 60px;
+        height: 50px;
+        max-width: 100%;
+        width: 340px;
+    }
+}

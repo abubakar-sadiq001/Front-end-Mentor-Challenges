@@ -57,4 +57,4 @@ Javascript, HTML, CSS...
 
 25) Intro-component-with-signup-form-master => (https://abubakar-sadiq001.github.io/Front-end-Mentor-Challenges/25%20intro-component-with-signup-form-master/)
 
-26) newsletter-sign-up-with-success-message-main => (https://abubakar-sadiq001.github.io/Front-end-Mentor-Challenges/newsletter-sign-up-with-success-message-main/)
+26) newsletter-sign-up-with-success-message-main => (https://abubakar-sadiq001.github.io/Front-end-Mentor-Challenges/26%20newsletter-sign-up-with-success-message-main/)

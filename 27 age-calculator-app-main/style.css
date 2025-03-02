@@ -1,0 +1,200 @@
+@font-face {
+    font-family: "myFont";
+    src: url(assets/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: "labelFont";
+    src: url(assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "outputFont";
+    /* src: url(assets/fonts/Poppins-BoldItalic.ttf); */
+    src: url(assets/fonts/Poppins-ExtraBoldItalic.ttf);
+}
+@font-face {
+    font-family: "errFont";
+    src: url(assets/fonts/Poppins-Italic.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    box-sizing: border-box;
+    font-family: "myFont", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 86%);
+    height: 100vh;
+}
+.container {
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    border-radius: 10px;
+    border-bottom-right-radius: 120px;
+    padding: 30px 150px 30px 40px;
+    position: relative;
+    margin: 0px 20px;
+}
+.container .inputsHeader #myForm {
+    display: flex;
+    gap: 25px;
+}
+.inputsHeader .inpt--flex #myLabel {
+    font-size: 14px;
+    font-weight: bold;
+    color: hsl(0, 1%, 44%);
+    font-family: "labelFont", sans-serif;
+    letter-spacing: 4px;
+}
+.inputsHeader .inpt--flex input {
+    width: 100%;
+    max-width: 105px;
+    height: 55px;
+    padding-left: 12px;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    border: 1px solid hsl(0, 0%, 86%);
+    outline: none;
+    margin: 10px 0px 10px 0px;
+    &:focus {
+        outline: 1px solid hsl(259, 100%, 65%);
+    }
+    &::placeholder {
+        font-weight: bolder;
+    }
+}
+.submitBtn {
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(259, 100%, 65%);
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    /* right: 30px; */
+    right: 14%;
+    top: 130px;
+}
+.submitBtn img {
+    width: 30px;
+}
+.submitBtn:hover {
+    background-color: hsl(0, 0%, 8%);
+}
+.outputs {
+    margin-top: 30px;
+}
+.outputs .output span {
+    font-family: "outputFont", sans-serif;
+    font-size: 4rem;
+    font-style: italic;
+    color: hsl(259, 100%, 65%);
+    line-height: 1.17;
+}
+.output {
+    font-family: "outputFont", sans-serif;
+    font-size: 4rem;
+    font-style: italic;
+    line-height: 1.17;
+}
+.output span {
+    color: #000;
+}
+.inpt--flex .errDay {
+    color: hsl(0, 100%, 67%);
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 11px;
+    font-family: "errFont", sans-serif;
+    margin-bottom: 30px;
+}
+.inpt--flex .errMonth {
+    color: hsl(0, 100%, 67%);
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 11px;
+    font-family: "errFont", sans-serif;
+    margin-bottom: 30px;
+} .inpt--flex .errYear {
+    color: hsl(0, 100%, 67%);
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 11px;
+    font-family: "errFont", sans-serif;
+    margin-bottom: 30px
+}
+@media (max-width: 581px) {
+    .outputs .output span {
+        font-size: 3rem;
+    }
+    .output {
+        font-size: 3rem;
+    }
+    .container {
+        padding: 30px 50px 30px 40px;
+    }
+}
+@media (max-width: 394px) {
+    .outputs .output span {
+        font-size: 2.3rem;
+    }
+    .output {
+        font-size: 2.3rem;
+    }
+}
+@media (max-width: 400px) {
+    .submitBtn {
+        right: 160px;
+        left: 145px;
+        top: 34%;
+    }
+     .outputs {
+        margin-top: 20%;
+    } 
+    .inpt--flex .errDay,
+    .inpt--flex .errMonth,
+    .inpt--flex .errYear {
+        font-size: 8px;
+    }
+    hr {
+        background-color: hsl(0, 0%, 94%);;
+        height: 1px;
+        margin-top: 20px;
+    }
+}
+@media (max-width: 394px) {
+    .submitBtn {
+        right: 162px;
+        left: 145px;
+        top: 39%;
+    }
+}
+@media (max-width: 378px) {
+    .submitBtn {
+        right: 200px;
+        left: 130px;
+        top: 39%;
+    }
+}
+@media (max-width: 353px) {
+    .submitBtn {
+        right: 200px;
+        left: 115px;
+        top: 39%;
+    }
+}
+@media (max-width: 326px) {
+    .submitBtn {
+        right: 200px;
+        left: 102px;
+        top: 35%;
+    }
+}

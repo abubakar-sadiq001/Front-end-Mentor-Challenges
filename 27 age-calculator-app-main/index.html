@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+        <div class="container">
+                <div class="inputsHeader">
+                    <form id="myForm" action="">
+                        <div class="inpt--flex one">
+                            <label id="day" for="inptDay">DAY</label><br>
+                            <input type="number" placeholder="DD" id="inptDay">
+                            <p class="errDay err"></p>
+                        </div>
+                        <div class="inpt--flex two">
+                            <label id="month" for="inptMonth">MONTH</label><br>
+                            <input type="number" placeholder="MM" id="inptMonth">
+                            <p class="errMonth err"></p>
+                        </div>
+                        <div class="inpt--flex three">
+                            <label id="year" for="inptYear">YEAR</label><br>
+                            <input type="number" placeholder="YYYY" id="inptYear">
+                            <p class="errYear err"></p>
+                        </div>
+                    </form>
+                </div>
+                    <button class="submitBtn" id="btn">
+                        <img src="assets/images/icon-arrow.svg">
+                    </button>
+                 <hr>
+                <div class="outputs">
+                    <div class="output"><span id="output-year">-- </span> years</div>
+                    <div class="output"><span id="output-month">-- </span> months</div>
+                    <div class="output"><span id="output-day">-- </span> days</div>                    
+                </div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>

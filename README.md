@@ -61,4 +61,4 @@ Javascript, HTML, CSS...
 
 27) age-calculator-app-main => (https://abubakar-sadiq001.github.io/Front-end-Mentor-Challenges/27%20age-calculator-app-main/)
 
-28) ping-coming-soon-page-master => (https://abubakar-sadiq001.github.io/Front-end-Mentor-Challenges/28%2028 ping-coming-soon-page-master/)
+28) ping-coming-soon-page-master => (https://abubakar-sadiq001.github.io/Front-end-Mentor-Challenges/28%20ping-coming-soon-page-master/)

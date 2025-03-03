@@ -58,3 +58,7 @@ Javascript, HTML, CSS...
 25) Intro-component-with-signup-form-master => (https://abubakar-sadiq001.github.io/Front-end-Mentor-Challenges/25%20intro-component-with-signup-form-master/)
 
 26) newsletter-sign-up-with-success-message-main => (https://abubakar-sadiq001.github.io/Front-end-Mentor-Challenges/26%20newsletter-sign-up-with-success-message-main/)
+
+27) age-calculator-app-main => (https://abubakar-sadiq001.github.io/Front-end-Mentor-Challenges/27%20age-calculator-app-main/)
+
+28) ping-coming-soon-page-master => (https://abubakar-sadiq001.github.io/Front-end-Mentor-Challenges/28%2028 ping-coming-soon-page-master/)

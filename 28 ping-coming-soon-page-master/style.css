@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Faculty+Glyphic&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 20px;
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+main {
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+    margin: 0px 0px;
+}
+.single-sec {
+    font-style: normal;
+    margin: 0px 10px;
+}
+.single-sec .hero {
+    padding: 10px 0px;
+    line-height: 2;
+    text-align: center;
+}
+.hero .logo {
+    width: 80px;
+    margin: 40px 0px 10px 0px;
+}
+.hero .myHeading {
+    font-size: 3rem;
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+    color: hsl(0, 0%, 0%);
+    }
+.myHeading span {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+}
+.hero .subHeading {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.hero .wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 9.5rem;
+}
+.wrapper .email-wrapper, .btn-wrapper {
+    margin-left: 15px;
+}
+.email-wrapper #userEmail {
+    height: 50px;
+    outline: none;
+    border-radius: 30px;
+    border: 1px solid hsl(0, 0%, 59%);
+    padding-left: 20px;
+    width: 175%;
+    max-width: 400px;
+}
+.btn-wrapper #notify {
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: hsl(223, 87%, 63%);
+    border-radius: 30px;
+    padding: 15px 60px;
+    border: none;
+    box-shadow: 0px 1px 5px hsl(223, 87%, 63%, .6),
+                0px 0px 0px hsl(223, 87%, 63%, .6);
+}
+#err {
+    color: red;
+    font-size: 13px;
+    margin-left: 30px;
+    display: none;
+}
+/* content */
+.content {
+    margin: 60px 0px;
+}
+.content #illustrationImg {
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+}
+footer {
+    margin-top: 100px;
+}
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+ul li {
+    list-style: none;
+    margin-left: 15px;
+    margin-bottom: 25px;
+}
+ul li a {
+    border: 1px solid hsl(223, 87%, 63%);
+    color: hsl(223, 87%, 63%);;
+    padding: 10px 10px;
+    border-radius: 30px;
+    display: flex;
+}
+ul li:hover a {
+    color: #fff;
+    background-color: hsl(223, 87%, 63%);;
+} 
+footer p {
+    text-align: center;
+    color: hsl(0, 0%, 59%);
+    font-size: 16px;
+}
+@media (max-width: 570px) {
+    .hero .wrapper {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .email-wrapper #userEmail {
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;   
+    }
+    .btn-wrapper #notify {
+        width: 90%;
+    }
+}
+@media (max-width: 577px) {
+    .hero .wrapper {
+        flex-direction: column;
+        gap: .8rem;
+    }
+    .email-wrapper #userEmail {
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;   
+    }
+    .btn-wrapper #notify {
+        width: 90%;
+    }
+}
+@media (max-width: 585px) {
+    .hero .myHeading {
+        font-size: 35px;
+    }
+}

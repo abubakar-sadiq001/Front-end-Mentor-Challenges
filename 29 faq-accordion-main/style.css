@@ -1,0 +1,123 @@
+@font-face {
+    font-family: "font";
+    src: url(assets/fonts//static/WorkSans-Bold.ttf);
+}
+@font-face {
+    font-family: "paragraphFont";
+    src: url(assets/fonts/static/WorkSans-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: url(assets/images/background-pattern-desktop.svg);
+    background-color: hsl(275, 100%, 97%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: "font", sans-serif;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px 30px;
+    max-width: 510px;
+    margin: 0px 15px;
+}
+.container .header {
+    display: flex;
+    font-size: 3.5rem;
+}
+.header span {
+    margin-left: 15px;
+}
+.container .faqs {
+    padding: 15px 0px;
+}
+.genClass h3 {
+    display: flex;
+    margin: 15px 0px;
+    font-size: 16px;
+    position: relative;
+    cursor: pointer;
+    padding-right: 40px;
+    color: hsl(292, 42%, 14%);
+    &:hover {
+        color: rgb(162, 0, 194);
+    }
+}
+h3 span img {
+    width: 28px;
+    position: absolute;
+    right: 0;
+}
+hr {
+   height: 1px;
+   background-color: hsl(275, 100%, 97%);
+}
+.genClass p {
+    font-size: 15px;
+    color: hsl(292, 16%, 49%);
+    margin: 10px 0px 20px 0px;
+    font-family: "paragraphFont", sans-serif;
+}
+.hidden1 {
+    display: none;
+} 
+.hidden2 {
+    display: none;
+}
+.hidden3 {
+    display: none;
+}
+.hidden4 {
+    display: none;
+}
+/*  */
+.block1 {
+    display: block;
+}
+.block2 {
+    display: block;
+}
+.block3 {
+    display: block;
+}
+.block4 {
+    display: block;
+}
+.minusIcon {
+    content: url(assets/images/icon-minus.svg);
+    position: absolute;
+    width: 28px;
+    right: 0;
+}
+
+footer p {
+    text-align: center;
+    font-family: "paragraphFont", sans-serif;
+    font-size: 14px;
+    margin: 40px 0px 10px 0px;
+}
+footer p a {
+    color: blue;
+}
+@media (max-width: 580px) {
+    .container .header {
+        display: flex;
+        font-size: 2.5rem;
+    }   
+    body {
+        background: url(assets/images/background-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: hsl(275, 100%, 97%);
+    } 
+}

@@ -173,3 +173,57 @@ Javascript, HTML, CSS...
 ### Desktop design
 
 ![alt text](desktop-design-24.jpg)
+
+30. contact-form-main => (https://abubakar-sadiq001.github.io/Front-end-Mentor-Challenges/30%20contact-form-main/)
+
+### Desktop design
+
+![contact-form-main](desktop-design-25.jpg)
+
+31. advice generator => (https://abubakar-sadiq001.github.io/Front-end-Mentor-Challenges/31%20Advice-generator-app-main/)
+
+### Desktop design
+
+![advice generator](desktop-design-26.jpg)
+
+32. notification page => (https://abubakar-sadiq001.github.io/Front-end-Mentor-Challenges/32%20Notifications%20page/)
+
+### Desktop design
+
+![notification page](desktop-design-27.jpg)
+
+33. time-tracking-dashboard-main => (Working on these)
+
+### Desktop design
+
+![time-tracking-dashboard-main](desktop-design-28.jpg)
+
+34. loopstudios-landing-page-main => (https://abubakar-sadiq001.github.io/Front-end-Mentor-Challenges/34%20loopstudios-landing-page-main/)
+
+### Desktop design
+
+![loopstudios-landing-page-main](desktop-design-29.jpg)
+
+35 expenses-chart-component-main => (https://abubakar-sadiq001.github.io/Front-end-Mentor-Challenges/35%20Expenses-chart-component-main/)
+
+### Desktop design
+
+![expenses-chart-component-main](desktop-design-30.jpg)
+
+36. sunnyside-agency-landing-page-main => (https://abubakar-sadiq001.github.io/Front-end-Mentor-Challenges/36%20sunnyside-agency-landing-page-main/)
+
+### Desktop design
+
+![sunnyside-agency-landing-page-main](desktop-design-31.jpg)
+
+37. tip-calculator-app-main => (https://abubakar-sadiq001.github.io/Front-end-Mentor-Challenges/37%20tip-calculator-app-main/)
+
+### Desktop design
+
+![tip-calculator-app-main](desktop-design-completed.jpg)
+
+38. mortgage-repayment-calculator-main => (https://abubakar-sadiq001.github.io/Front-end-Mentor-Challenges/38%20mortgage-repayment-calculator-main/)
+
+### Desktop design
+
+![mortgage-repayment-calculator-main](desktop-design-completed-1.jpg)

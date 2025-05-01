@@ -1,0 +1,122 @@
+@media (max-width: 1422px) {
+    .transform-brand-cont {
+        padding: 10rem;
+    }
+    .standout-brand-cont {
+        padding: 10rem;
+    }
+    @media (max-width: 1123px) {
+        .transform-brand-cont {
+            padding: 7rem;
+        }
+        .standout-brand-cont {
+            padding: 7rem;
+        }
+    }
+    @media (max-width: 881px) {
+        .transform-brand-cont {
+            padding: 4rem;
+        }
+        .standout-brand-cont {
+            padding: 4rem;
+        }
+    }
+    @media (max-width: 689px) {
+        main .transform-section {
+            flex-direction: column;
+            width: 100%;
+        }
+        .transform-section img {
+            width: 100%;
+            display: none;
+        }
+        .transform-section .hidden {
+            display: block;
+        }
+        .transform-brand-cont {
+            width: 100%;
+            background-color: rgb(222, 96, 121);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        /* Standout section */
+        main .standout-section {
+            flex-direction: column;
+            width: 100%;
+        }
+        .standout-section img {
+            width: 100%;
+            display: none;
+        }
+        .standout-section .hidden {
+            display: block;
+        }
+        .standout-brand-cont {
+            width: 100%;
+            background-color: rgb(222, 96, 121);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        /* graphicdesign-photographic */
+        main .graphicdesign-photographic {
+            flex-direction: column;
+        }
+        .graphicdesign-photographic .graphics {
+            background: url(assets/imgs/mobile/image-graphic-design.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+        }
+        .graphicdesign-photographic .photography  {
+            background: url(assets/imgs/mobile/image-photography.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+        }
+        /* Testimonials-section */
+        main .testimonials-sec {
+            padding: 100px 0px;
+        }
+        .testimonials-sec .contents {
+            flex-flow: wrap;
+        }
+        /* Last-section */
+        .last-sec .desktop {
+            display: none;
+        }
+        .last-sec .mobile {
+            display: block;
+        }
+        /* hero-big-heading-txt */
+        .center .hero-big-heading-txt  {
+            font-size: 2.9rem;
+        }
+        
+    }
+    @media (max-width: 817px) {
+        nav .logo-container img {
+            width: 150px;
+        }
+        @media (max-width: 721px) {
+            .menu-open {
+                display: block;
+            }
+            nav .lists {
+                display: none;
+            }
+        }
+        @media (max-width: 397px) {
+            .menu-bar {
+                max-width: 330px;
+            }
+        }
+    }
+}

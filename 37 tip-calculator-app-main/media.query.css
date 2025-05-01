@@ -1,0 +1,24 @@
+@media (max-width: 770px) {
+    .container .contents {
+        flex-direction: column;
+    }
+    .container .input-side {
+        width: 100%;
+    }
+    .contents .result-wrapper {
+        width: 100%;
+        margin-top: 20px;
+        padding: 20px 10px;
+    }
+    main .container {
+        padding: 15px;
+    }
+    @media (max-width: 474px) {
+        .input-side .percentages  {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        main .container {
+            padding: 10px;
+        }
+    }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h3>Notifications <span class="notfShow">0</span></h3>
+            <p class="readAll">Mark all as read</p>
+        </header>
+        <div class="usersWrapper">
+            <div class="user1 notification">
+                <div class="flex-row">
+                    <div>
+                        <img src="assets/images/avatar-mark-webber.webp">
+                    </div>
+                <div class="notification-desc">
+                    <p><b id="pName">Mark Webber</b> <span id="grayTxt"> reacted to your post</span> <a href="">My first tournament today!</a> <span class="point one">&bullet;</span></p>
+                    <p class="date">1m ago</p>
+                </div>
+                </div>
+            </div>
+            <div class="user2 notification">
+                <div class="flex-row">
+                    <div>
+                        <img src="assets/images/avatar-angela-gray.webp">
+                    </div>
+                <div class="notification-desc">
+                    <p><b id="pName">Angela Gray </b><span id="grayTxt">followed you </span> <span class="point two">&bullet;</span></p>
+                    <p class="date">5m ago</p>
+                </div>
+                </div>
+            </div>
+            <div class="user3 notification">
+                <div class="flex-row">
+                    <div>
+                        <img src="assets/images/avatar-jacob-thompson.webp">
+                    </div>
+                <div class="notification-desc">
+                    <p><b id="pName">Jaycob Thompson </b><span id="grayTxt"> has joined your group </span> <a href="">Chess Club</a> <span class="point three">&bullet;</span></p>
+                    <p class="date">1 day ago</p>
+                </div>
+                </div>
+            </div>
+            <div class="user4 notification">
+                <div class="flex-row">
+                    <div>
+                        <img src="assets/images/avatar-rizky-hasanuddin.webp">
+                    </div>
+                <div class="notification-desc">
+                    <p><b id="pName">Mark Webber</b><span id="grayTxt"> sent you a private message</span></p>
+                    <p class="date">5 days ago</p>
+                    <!--  -->
+                <div class="reply">
+                    <p> Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.</p>
+                </div>
+                <!--  -->
+                </div>
+                </div>
+            </div>
+            <div class="user5 notification">
+                <div class="flex-row">
+                    <div>
+                        <img src="assets/images/avatar-kimberly-smith.webp">
+                    </div>
+                <div class="notification-desc">
+                    <div class="flex">
+                        <div>
+                            <p><b id="pName">Kimberly Smith</b><span id="grayTxt"> commented on you picture</span></p>
+                        <p class="date">1 week ago</p>
+                        </div>
+                        <div class="pImgDiv">
+                            <img id="post" src="assets/images/image-chess.webp">
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="user6 notification">
+                <div class="flex-row">
+                    <div>
+                        <img src="assets/images/avatar-nathan-peterson.webp">
+                    </div>
+                <div class="notification-desc">
+                    <p><b id="pName">Nathan Peterson</b><span id="grayTxt"> reacted to your post </span><a href="">5 end-game strategies to increase your win rate</a></p>
+                    <p class="date">2 weeks ago</p>
+                </div>
+                </div>
+            </div>
+            <div class="user7 notification">
+               <div class="flex-row">
+                <div>
+                    <img src="assets/images/avatar-anna-kim.webp">
+                </div>
+                <div class="notification-desc">
+                    <p><b id="pName">Anna Kim </b><span id="grayTxt">left the group</span> <a href="">Chess Club</a></p>
+                    <p class="date">2 weeks ago</p>
+                </div>
+               </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

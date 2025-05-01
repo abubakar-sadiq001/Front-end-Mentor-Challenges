@@ -1,0 +1,43 @@
+@media (max-width: 686px) {
+    body {
+        height: 180vh;
+    }
+    main .container {
+        border-radius: 0px;
+    }
+    .container .contents {
+        flex-direction: column;
+        max-width: 500px;
+    }
+    .contents .bill-zone {
+        width: 98%;
+        border-radius: 0px;
+    }
+    form .mortgage--and--Intrest {
+        display: block;
+        width: 100%;
+    }
+    .term span {
+        max-width: 100%;
+    }
+    .interest span {
+        max-width: 100%;
+    }
+    form #btn {
+        max-width: 100%;
+        padding: 15px;
+    }
+    .contents .result-zone {
+        border-radius: 0px;
+        width: 100%;
+    }
+    @media (max-width: 401px) {
+        .bill-zone header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        header #clearFillds {
+            margin-top: 10px;
+        }
+    }
+}

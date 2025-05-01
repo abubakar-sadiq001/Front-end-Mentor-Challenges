@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "pageFont";
+    src: url(assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+body {
+    font-family: "pageFont", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(210, 60%, 98%);
+}
+.container {
+    position: relative;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0px 0px 11px hsl(0, 0%, 75%);
+    border-radius: 8px;
+    padding: 10px 25px;
+    width: 100%;
+    max-width: 700px;
+    margin: 100px 20px;
+}
+.container header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0px;
+}
+header h3 {
+    font-weight: 900;
+    font-size: 1.5rem;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+}
+header h3 span {
+    background-color: hsl(219, 85%, 26%);
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+header .readAll {
+    padding: 0px 10px;
+}
+header p {
+    cursor: pointer;
+    color: hsl(219, 14%, 63%);
+}
+.container .usersWrapper {
+    display: flex;
+    flex-direction: column;
+}
+.usersWrapper .notification {
+    /* display: flex; */
+    gap: 20px;
+    align-items: center;
+    margin: 5px 0px;
+    padding: 20px 15px;
+}
+.notification .flex-row {
+    display: flex;
+    /* align-items: center; */
+}
+.flex-row div:nth-child(2) {
+    margin-left: 15px;
+}
+.notification img {
+    width: 40px;
+    cursor: pointer;
+}
+.notification .notification-desc {
+    line-height: 1.4;
+}
+.notification-desc p {
+    font-size: 16px;
+}
+.notification-desc p #pName {
+    cursor: pointer;
+    margin-right: 8px;
+    transition: .1s all;
+}
+p #pName:hover {
+    color: hsl(219, 85%, 26%);
+}
+p #grayTxt {
+    color: hsl(219, 12%, 42%);
+    margin-right: 6px;
+}
+p a {
+    text-decoration: none;
+    color: hsl(219, 85%, 26%);
+}
+p .point {
+    font-size: 20px;
+    color: hsl(1, 90%, 64%);
+    margin-left: 4px;
+}
+.date {
+    color: hsl(219, 14%, 63%);
+    margin-top: 5px;
+}
+.usersWrapper .user1,
+.user2, .user3 {
+    background-color: hsl(210, 60%, 98%);
+    border-radius: 6px;
+    cursor: pointer;
+}
+.user5 .notification-desc .flex {
+    display: flex;
+    align-items: center;
+}
+.user5 {
+    position: relative;
+}
+#post {
+    position: absolute;
+    top: 22px;
+    right: 0;
+}
+.user1 p a {
+    color: hsl(219, 12%, 42%);;
+    font-weight: 900;
+    transition: .1s all;
+    &:hover {
+        color: hsl(219, 85%, 26%);
+    }
+}
+.user3 p a {
+    color: hsl(219, 85%, 26%);
+    font-weight: 900;
+}
+.user6 p a {
+    color: hsl(219, 12%, 42%);
+    font-weight: 900;
+    &:hover {
+        color: hsl(219, 85%, 26%)
+    }
+}
+.user7 p a {
+    color: hsl(219, 85%, 26%);
+    font-weight: 900;
+}
+.user4 {
+    position: relative;
+}
+.reply {
+    color: hsl(219, 12%, 42%);
+    padding: 15px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: 1px solid  hsl(205, 33%, 90%);
+    border-radius: 4px;
+    transition: .1s all ease-in-out;
+    &:hover {
+        background-color: hsl(211, 68%, 94%);
+    }
+}
+@media (max-width: 446px) {
+    header h3 {
+        font-size: 1.2rem;
+    }
+    header h3 span {
+        padding: 3px 10px;
+    }
+    header .readAll {
+        padding: 0px 5px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 543px) {
+    body {
+        height: 120vh;
+    }
+}
+@media (max-width: 400px) {
+    body {
+        height: 200vh;
+    }
+}

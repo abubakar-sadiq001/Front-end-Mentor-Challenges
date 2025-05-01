@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time-tracking Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+            <div class="user-wrapper">
+                <div class="contents">
+                    <img id="userImg" src="assets/images/image-jeremy.png" alt="Jeremy DP">
+                    <p class="report">Report for</p>
+                    <p class="bigText">Jeremy Robson</p>
+                </div>
+                <div class="navigationBtns">
+                    <p class="getBtns daily-subheading active">Daily</p>
+                    <p class="getBtns weekly-subheading">Weekly</p>
+                    <p class="getBtns monthly-subheading">Monthly</p>
+                </div>
+            </div>
+            <div class="work-container">
+                <img src="assets/images/icon-work.svg" id="workIcon" draggable="false">
+                <div class="content-box">
+                    <header>
+                        <p class="title title1"></p>
+                        <img src="assets/images/icon-ellipsis.svg">
+                    </header>
+                    <div class='div'>
+                        <p class="work-hours hours"></p>
+                        <p class="work-duration allDurations"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="play-container">
+                <img src="assets/images/icon-play.svg" id="play-icon" draggable="false">
+                <div class="content-box">
+                    <header>
+                        <p class="title title2"></p>
+                        <img src="assets/images/icon-ellipsis.svg">
+                    </header>
+                    <div class='div'>
+                        <p class="play-hours hours"></p>
+                        <p class="play-duration allDurations"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="study-container">
+                <img src="assets/images/icon-study.svg" id="study-icon" draggable="false">
+                <div class="content-box">
+                    <header>
+                        <p class="title title3"></p>
+                        <img src="assets/images/icon-ellipsis.svg">
+                    </header>
+                    <div class='div'>
+                        <p class="study-hours hours"></p>
+                        <p class="study-duration allDurations"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="exercise-container">
+                <img src="assets/images/icon-exercise.svg" id="exercise-icon" draggable="false">
+                <div class="content-box">
+                    <header>
+                        <p class="title title4"></p>
+                        <img src="assets/images/icon-ellipsis.svg">
+                    </header>
+                    <div class='div'>
+                        <p class="exercise-hours hours"></p>
+                        <p class="exercise-duration allDurations"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="social-container">
+                <img src="assets/images/icon-social.svg" id="social-icon" draggable="false">
+                <div class="content-box">
+                    <header>
+                        <p class="title title5"></p>
+                        <img src="assets/images/icon-ellipsis.svg">
+                    </header>
+                    <div class='div'>
+                        <p class="social-hours hours"></p>
+                        <p class="social-duration allDurations"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="selfcare-container">
+                <img src="assets/images/icon-self-care.svg" id="selfcare-icon" draggable="false">
+                <div class="content-box">
+                    <header>
+                        <p class="title title6"></p>
+                        <img src="assets/images/icon-ellipsis.svg">
+                    </header>
+                    <div class='div'>
+                        <p class="selfcare-hours hours"></p>
+                        <p class="selfcare-duration allDurations"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

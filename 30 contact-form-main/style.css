@@ -1,0 +1,237 @@
+@font-face {
+    font-family: "font";
+    src: url(assets/fonts/Karla-VariableFont_wght.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "font", sans-serif;
+    font-size: 16px;
+    background-color: hsl(148, 38%, 91%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} 
+.container {
+    background-color: #fff;
+    padding: 20px 30px;
+    max-width: 500px;
+    border-radius: 10px;
+    margin: 10px 10px;
+    position: relative;
+}
+.container .sucess-01--messg-container {
+    background-color: hsl(187, 24%, 22%, 0.9);
+    border-radius: 7px;
+    position: absolute;
+    top: -100px;
+    left: 0;
+    right: 0;
+    margin: 0px 30px;
+    padding: 15px 18px;
+    display: none;
+}
+.sucess-01--messg-container .line-1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.line-1 img {
+    width: 20px;
+}
+.line-1 h3 {
+    font-size: 16px;
+    color: #fff;
+}
+.sucess-01--messg-container .subHeading {
+    color: hsl(148, 38%, 91%);
+    font-size: 16px;
+    margin-top: 15px;
+}
+form h3 {
+    font-size: 28px;
+    margin: 10px 0px;
+}
+form input:hover {
+    cursor: pointer;
+}
+form .firstNameNdLastName {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0px;
+}
+.firstNameNdLastName label {
+    font-size: 13px;
+    color: hsl(187, 24%, 22%);
+}
+.firstNameNdLastName label span {
+    color: hsl(169, 82%, 27%);
+}
+.firstNameNdLastName input {
+    height: 35px;
+    width: 100%;
+    max-width: 200px;
+    padding-left: 12px;
+    border-radius: 6px;
+    color: hsl(187, 24%, 22%);
+    margin-top: 6px;
+    border: 1px solid hsl(186, 15%, 59%);
+    &:focus {
+        outline: hsl(169, 82%, 27%) 1px solid;
+    }
+}
+label[for="Email"] {
+    font-size: 13px;
+    color: hsl(187, 24%, 22%);
+}
+label[for="Email"] span {
+    color: hsl(169, 82%, 27%);
+}
+#Email {
+    height: 35px;
+    width: 100%;
+    max-width: 410px;
+    border-radius: 6px;
+    border: 1px solid hsl(186, 15%, 59%);
+    padding-left: 12px;
+    margin-top: 5px;
+    &:focus {
+        outline: hsl(169, 82%, 27%) 1px solid;
+    }
+}
+/* Radio */
+.rdio {
+    margin: 20px 0px;
+}
+.rdio .flex-wrapper {
+    display: flex;
+    gap: 10px;
+    padding: 10px 0px;
+}
+.flex-wrapper .rdio1Wrapper1, .rdio1Wrapper2 {
+    border: 1px solid hsl(186, 15%, 59%);
+    color: hsl(187, 24%, 22%);
+    font-size: 14px;
+    border-radius: 6px;
+    padding: 8px 0px 8px 20px;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    &:hover {
+        cursor: pointer;
+    }
+}
+#qHead {
+    font-size: 13px;
+    color: hsl(187, 24%, 22%);
+}
+#qHead span {
+    color: hsl(169, 82%, 27%);
+}
+.rdio .errRadio {
+    margin-top: 1px;
+}
+.rdio1Wrapper1 #rdio1, #rdio2 {
+    margin-right: 10px;
+}
+/* TextArea */
+.textArea label[for="txt"] {
+    font-size: 13px;
+    color: hsl(187, 24%, 22%);
+}
+.textArea .mssgLabel span {
+    color: hsl(169, 82%, 27%);
+}
+.textArea #txt {
+    margin-top: 8px;
+    resize: none;
+    width: 100%;
+    max-width: 410px;
+    height: 80px;
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid hsl(186, 15%, 59%);
+    &:focus {
+        outline: hsl(169, 82%, 27%) 1px solid;
+    }
+}
+.checkBox {
+    margin: 30px 0px;
+}
+.checkBox label[for="check"] {
+    margin-left: 15px;
+    font-size: 15px;
+    color: hsl(187, 24%, 22%);
+    &:hover {
+        cursor: pointer;
+    }
+}
+.checkBox #check {
+    accent-color: hsl(169, 82%, 27%);
+}
+.checkBox #red {
+    color: hsl(169, 82%, 27%);;
+}
+form div #submitBtn {
+    background-color: hsl(169, 82%, 27%);
+    border: none;
+    border-radius: 6px;
+    color: hsl(0, 0%, 100%);
+    height: 40px;
+    width: 100%;
+    max-width: 410px;
+    font-size: 14px;
+    letter-spacing: 1.6px;
+    cursor: pointer;
+    margin: 10px 0px 18px 0px;
+}
+
+.firstNameNdLastName .errName {
+    color: hsl(0, 66%, 54%) !important;
+    margin-top: 3px;
+}
+.firstNameNdLastName .errLastName {
+    color: hsl(0, 66%, 54%) !important;
+    margin-top: 3px;
+}
+
+/* Err */ 
+.genErr {
+    color: hsl(0, 66%, 54%);
+    font-size: 13px;
+    margin-top: 8px;
+    display: none;
+}
+@media (max-width: 422px) {
+    form .firstNameNdLastName {
+        flex-direction: column;
+        
+    }
+    .firstNameNdLastName input {
+        width: 100%;
+        max-width: 320px;
+        height: 40px;
+    }
+    .rdio .flex-wrapper {
+        flex-direction: column;
+    }
+    .flex-wrapper .rdio1Wrapper1, .rdio1Wrapper2 {
+        padding: 12px 0px 12px 20px;
+    }
+    .textArea #txt {
+        height: 200px;
+    }
+}
+@media (max-width: 470px) {
+    .container {
+        margin: 100% 10px;
+    }
+    body {
+        height: 145vh;
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact-form-main</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="sucess-01--messg-container">
+            <div class="line-1">
+                <img src="assets/images/icon-success-check.svg">
+                <h3>Message Sent!</h3>
+            </div>
+            <p class="subHeading">Thanks for completing the form. We'll be in touch soon!</p>
+        </div>
+        <form>
+            <h3>Contact Us</h3>
+            <div class="firstNameNdLastName">
+                <div class="fNameWrapper">
+                    <label for="fName">First Name <span>*</span></label><br>
+                    <input type="name" id="fName">
+                    <p class="errName genErr">This field is required</p>
+                </div>
+                <div class="lNameWrapper">
+                    <label for="lName">Last Name <span>*</span></label><br>
+                    <input type="name" id="lName">
+                    <p class="errLastName genErr">This field is required</p>
+                </div>
+            </div>
+            <!--  -->
+            <label for="Email">Email Addess <span>*</span></label><br>
+            <input type="email" id="Email">
+            <p class="errEmail genErr">This field is required</p>
+            <!--  -->
+            <div class="rdio">
+                <label for="rdio1" id="qHead">Query Type <span>*</span></label>
+                <div class="flex-wrapper">
+                    <div class="rdio1Wrapper1">
+                        <input type="radio" id="rdio1" name="unit"><span><label for="rdio1">General Enquiry</label></span>
+                    </div>
+            
+                    <div class="rdio1Wrapper2">
+                        <input type="radio" id="rdio2" name="unit"><span><label for="rdio2">Support Request</label></span>
+                    </div>
+                </div>
+                <p class="errRadio genErr">This field is required</p>
+            </div>
+            <div class="textArea">
+                <label for="txt" class="mssgLabel">Message <span>*</span></label><br>
+                <textarea id="txt"></textarea>
+                <p class="errText genErr">This field is required</p>
+            </div>
+            <div class="checkBox">
+                <input type="checkbox" id="check"><span><label for="check">I consent to being contacted by the team</label> <span id="red">*</span></span>
+                <p class="errCheck genErr">To submit this form, please consent to being contacted</p>
+            </div>
+            <div>
+                <button id="submitBtn">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

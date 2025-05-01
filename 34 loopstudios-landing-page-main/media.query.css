@@ -1,0 +1,162 @@
+@media (max-width: 1479px) {
+    .first-sec .interactiveImg {
+        max-width: 500px;
+    }
+    .first-sec .mini-box-content {
+        max-width: 400px;
+        padding: 2rem;
+    }
+    .mini-box-content .big-text {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 986px) {
+    .container .first-sec {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: static;
+    }
+    .first-sec .interactiveImg {
+        position: static;
+        max-width: 800px;
+    }
+    .first-sec .mini-box-content {
+        position: static;
+        text-align: center;
+        margin-top: 20px;
+        border: none;
+    }
+}
+@media (max-width: 915px) {
+    .second-sec .flex-row-wrapper {
+        justify-content: space-between;
+        padding: 0px 30px;
+    }
+}
+@media (min-width: 2077px) {
+    .first-sec .mini-box-content {
+        max-width: 700px;
+        bottom: 0px;
+    }
+}
+/* When ever the screen reaches 819px break-point the menu-link should be hidden */
+@media (max-width: 819px) {
+    nav .header-links {
+        display: none;
+    }
+    .open {
+        display: block;
+    }
+    .showmenu {
+        display: block;
+    }
+}
+/* Resizes the image text size at specified break-point below */
+@media (max-width: 975px) {
+    figure figcaption {
+        font-size: 1.5vh;
+        max-width: 400px;
+        padding: 10px 15px;
+    }
+}
+/*  */
+@media (max-width: 789px) {
+    .second-sec article {
+        display: flex;
+        flex-direction: column;
+    }
+    article figure {
+        width: 100%;
+        max-width: 400px;
+    }
+    figure img {
+        width: 100%;
+        max-width: 400px;
+    }
+    .allDesktop {
+        display: none;
+    }
+    .allMobile {
+        display: block;
+    }
+    .flex-row-wrapper {
+        flex-direction: column;
+    }
+    .second-sec {
+        position: relative;
+    }
+    .seeall-btn {
+        position: absolute;
+        bottom: -70px;
+    }
+    #creators-head {
+        font-size: 1.3rem;
+        position: absolute;
+        top: 30px;
+    }
+    .container .first-sec {
+        margin-bottom: -90px;
+    }
+}
+/* ********** HEADER ********** */
+@media (max-width: 527px) {
+    header {
+        padding: 40px 30px;
+    }
+    @media (max-width: 476px) {
+        .logo {
+            width: 120px;
+        }
+        .text-wrapper {
+            padding: 10px;
+        }
+        .text-wrapper .transformational-text {
+            width: 200px;
+            font-size: 1.3rem;
+        }
+    }
+}
+/* Side bar logo */ 
+@media (max-width: 443px) {
+    .sideMenu-logo {
+        width: 150px;
+    }
+}
+@media (max-width: 531px) {
+    .sideMenu .sidelist {
+        margin-top: 50%;
+    }
+    @media (max-width: 326px) {
+        .sideMenu .sidelist {
+            margin-top: 100%;
+        }  
+    }
+}
+/* FOOTER */
+@media (max-width: 682px) {
+    footer .footerContenets {
+        padding: 15px;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .footerContenets .media-links {
+        justify-content: center;
+    }
+    .footerContenets .left .footer-links {
+        flex-direction: column;
+        gap: 0px;
+        margin: 10px 0px;
+    }
+    .footer-links li {
+        margin: 10px 0px;
+    }
+    .footer-links li a:hover::before {
+        width: 30%;
+    }
+    .footer-links li a:hover::after {
+        width: 0%;
+    }
+}
